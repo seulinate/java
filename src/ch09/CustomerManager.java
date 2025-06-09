@@ -1,12 +1,12 @@
-package ch06;
+package ch09;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class CustomerManager {
 	
-	static final int Max = 100;
-	
-	static Customer[] custList = new Customer[Max];
+//	static Customer[] custList = new Customer[Max];
+	static ArrayList<Customer> custList = new ArrayList<>();
 	
 	static int index = -1;
 	static int count = 0;
@@ -17,7 +17,9 @@ public class CustomerManager {
 	public static void main(String[] args) {
 		
 		while(true) {
+			count = custList.size();
 			System.out.printf("\n 고객 수:%d, 인덱스: %d \n",count,index);
+			
 			System.out.println("=================================메 뉴=====================================");
 			System.out.println("(I)nsert | (P)revious | (N)ext | (C)urrent | (U)pdate | (D)elete | (Q)uit");
 			System.out.print("메뉴를 입력하세요 : ");
@@ -28,13 +30,8 @@ public class CustomerManager {
 			switch(menu.charAt(0)) {
 			case 'i': case 'ㅑ':
 				System.out.println("고객 정보를 입력해주세요. (예: 이름, 성별, 이메일, 생년월일)");
-				
-				if(count >= Max) {
-					System.out.println(">> 고객 정보 저장 공간이 부족합니다. 더 이상 입력할 수 없습니다.");
-				}else {
-					insertCustomer();
-					System.out.println("고객 정보 입력이 정상적으로 완료되었습니다.");
-				}
+				insertCustomer();
+				System.out.println("고객 정보를 입력했습니다.");
 				break;
 			
 			case 'p': case 'ㅔ' :
@@ -44,7 +41,7 @@ public class CustomerManager {
 					System.out.println(">> 이전 데이터가 존재하지 않습니다.");
 				}else {
 					index--;
-					printCustomer();
+					printCustomer(index);
 				}
 				break;
 				
@@ -55,7 +52,7 @@ public class CustomerManager {
 					System.out.println(" >> 다음 데이터가 존재하지 않습니다.");
 				}else {
 					index++;
-				printCustomer();
+				printCustomer(index);
 				}
 				break;
 				
@@ -63,7 +60,7 @@ public class CustomerManager {
 				System.out.println("현재 데이터를 출력합니다. >>");
 
 				if((index >= 0) && (index < count) ){
-					printCustomer();
+					printCustomer(index);
 				}else {
 					System.out.println("출력할 데이터가 선택되지 않았습니다.");
 				}
@@ -73,7 +70,7 @@ public class CustomerManager {
 				System.out.print("수정할 데이터를 입력하세요.");		
 				if((index >= 0) && (index < count)) {
 					System.out.println(index + "번째 데이터를 수정합니다.");
-					updateCustomer();
+					updateCustomer(index);
 				}else {
 					System.out.println("고객 데이터 수정이 정상적으로 완료되었습니다.");	
 				}
@@ -84,7 +81,7 @@ public class CustomerManager {
 				
 				if((index >=0) && (index < count )) {
 					System.out.println(index + "번째 데이터 삭제했습니다.");
-					deleteCustomer();
+					deleteCustomer(index);
 				}else {
 				System.out.println("삭제할 데이터가 없습니다.");
 				}
@@ -101,48 +98,6 @@ public class CustomerManager {
 			}
 		}
 	}
-
-	
-	public static void deleteCustomer() {
-		for(int i=index; i<count-1; i++) {
-//			nameList[i] = nameList[i+1];
-//			genderList[i] = genderList[i+1];
-//			emailList[i] = emailList[i+1];
-//			birthYearList[i] = birthYearList[i+1];
-			
-			custList[i] = custList[i+1];
-		}
-
-		
-		count--;
-	}
-
-
-	public static void updateCustomer() {
-		Customer customer = custList[index];
-		
-		System.out.println("----------UPDATE CUSTOMER INFO------------");
-//		System.out.print("수전 전 : 이름 (" + nameList[index] + ")");
-//		nameList[index] = sc.next();
-//		System.out.print("수전 전 : 성별 ( " + genderList[index] + ")");
-//		genderList[index] = sc.next().charAt(0);
-//		System.out.print("수전 전 : 이메일 (" + emailList[index] + ")");
-//		emailList[index] = sc.next();
-//		System.out.print("수전 전 : 출생연도(" + birthYearList[index] + ")");
-//		birthYearList[index] = sc.nextInt();
-		
-		System.out.print("수전 전 : 이름 (" + customer.name + ")");
-		customer.name = sc.next();
-		System.out.print("수전 전 : 성별 (" + customer.gender + ")");
-		customer.gender = sc.next().charAt(0);
-		System.out.print("수전 전 : 이메일 (" + customer.email + ")");
-		customer.email = sc.next();
-		System.out.print("수전 전 : 출생연도 (" + customer.birthYear + ")");
-		customer.birthYear = sc.nextInt();
-
-
-	}
-
 
 	public static void insertCustomer() {
 		System.out.print("이름 : ");
@@ -163,25 +118,53 @@ public class CustomerManager {
 //		birthYearList[count] = birthYear;
 		
 		Customer customer = new Customer(name,gender,email,birthYear);
-		custList[count] = customer;
+//		custList[count] = customer;
 		
-		count++;
+		custList.add(customer);
+		
+//		count++;
 		
 	}
 	
-	public static void printCustomer() {
+	
+	public static void deleteCustomer(int index) {
+		custList.remove(index);
+	}
+
+
+	public static void updateCustomer(int index) {
+//		Customer customer = custList[index];
+		Customer customer = custList.get(index);
+		
+		System.out.println("----------UPDATE CUSTOMER INFO------------");
+		
+		System.out.print("수전 전 : 이름 (" + customer.getName() + ")");
+		customer.setName(sc.next());
+		System.out.print("수전 전 : 성별 (" + customer.getGender() + ")");
+//		customer.gender = sc.next().charAt(0);
+		customer.setGender(sc.next().charAt(0));
+		System.out.print("수전 전 : 이메일 (" + customer.getEmail() + ")");
+//		customer.email = sc.next();
+		customer.setEmail(sc.next());
+		System.out.print("수전 전 : 출생연도 (" + customer.getBirthYear() + ")");
+//		customer.birthYear = sc.nextInt();
+		customer.setBirthYear(sc.nextInt());
+
+
+	}
+
+
+
+	
+	public static void printCustomer(int index) {
 		System.out.println("==========고객정보===========");
-		Customer customer = custList[index];
+//		Customer customer = custList[index];
+		Customer customer = custList.get(index);
 		
-		System.out.println("이름 :" + customer.name);
-		System.out.println("성별 :" + customer.gender);
-		System.out.println("이메일 :" + customer.email);
-		System.out.println("출생 연도 :" + customer.birthYear);
-		
-//		System.out.println("이름 :" +nameList[index]);
-//		System.out.println("성별 :" +genderList[index]);
-//		System.out.println("이메일 :" +emailList[index]);
-//		System.out.println("출생 연도 :" +birthYearList[index]);
+		System.out.println("이름 :" + customer.getName());
+		System.out.println("성별 :" + customer.getGender());
+		System.out.println("이메일 :" + customer.getEmail());
+		System.out.println("출생 연도 :" + customer.getBirthYear());
 	}
 
 	
