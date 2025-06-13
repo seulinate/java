@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html manifest="index.manifest">
+<head>
+	<!-- 2023.08.21 -->
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-63011984-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-63011984-1');
+	</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="google-site-verification" content="RPK2fDgygxeiosW4a4sE8zcla1193rlzAf90zQjTtvc" />
+    
+    <title>자바전문가그룹</title>
+    <!-- Favicon -->
+    <link href="/favicon.png;jsessionid=A654758F0F18128551A96730EE9CEED6" rel="icon" type="image/png">
+	
+	<link rel="stylesheet" href="/css/default.css;jsessionid=A654758F0F18128551A96730EE9CEED6">
+    <!-- Essential styles -->
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css;jsessionid=A654758F0F18128551A96730EE9CEED6">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css;jsessionid=A654758F0F18128551A96730EE9CEED6"> 
+    <link rel="stylesheet" href="/assets/fancybox/jquery.fancybox.css;jsessionid=A654758F0F18128551A96730EE9CEED6?v=2.1.5" media="screen"> 
+
+    <!-- Boomerang styles -->
+    <link id="wpStylesheet" rel="stylesheet" type="text/css" href="/css/global-style.css;jsessionid=A654758F0F18128551A96730EE9CEED6" media="screen">  
+
+    <!-- Boomerang styles -->
+    <link rel="stylesheet" type="text/css" href="/css/side-menu.css;jsessionid=A654758F0F18128551A96730EE9CEED6" media="screen">  
+
+    <!-- Required JS async 또는 defer 속성을 넣으면 안됩니다.-->
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="/js/jquery-ui.min.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+
+	<!-- Essentials -->
+	<script async src="/assets/bootstrap/js/bootstrap.min.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script async src="/js/jquery.hoverup.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script async src="/js/jquery.hoverdir.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script async src="/js/jquery.stellar.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+
+	<!-- Boomerang mobile nav - Optional  -->
+	<script async src="/assets/responsive-mobile-nav/js/jquery.dlmenu.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script async src="/assets/responsive-mobile-nav/js/jquery.dlmenu.autofill.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+
+	<!-- Assets -->
+	<script async src="/assets/hover-dropdown/bootstrap-hover-dropdown.min.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script async src="/assets/page-scroller/jquery.ui.totop.min.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script async src="/assets/mixitup/jquery.mixitup.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script async src="/assets/mixitup/jquery.mixitup.init.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script async src="/assets/fancybox/jquery.fancybox.pack.js;jsessionid=A654758F0F18128551A96730EE9CEED6?v=2.1.5"></script>
+	<script async src="/assets/waypoints/waypoints.min.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script async src="/assets/milestone-counter/jquery.countTo.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+
+	<!-- Mouse Hover menu App JS -->
+	<script async src="/js/wp.app.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<!--[if lt IE 9]>
+	    <script src="/js/html5shiv.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	    <script src="/js/respond.min.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<![endif]-->
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8EBY4CDQ48"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-8EBY4CDQ48');
+	</script>
+
+	<!-- google sign-in -->
+	<meta name="google-signin-client_id" content="97906395215-c9pitm8nc7oc49si11ltdt11sskcmcn0.apps.googleusercontent.com">
+	<!-- google adsense -->
+	<script data-ad-client="ca-pub-6545266313838291" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	function onSignIn(googleUser) {
+		//var profile = googleUser.getBasicProfile();
+		//console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+		//console.log('Name: ' + profile.getName());
+		//console.log('Image URL: ' + profile.getImageUrl());
+		//console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+		var id_token = googleUser.getAuthResponse().id_token;
+		
+		var xhr = new XMLHttpRequest();
+		xhr.open('POST', '/tokensignin');
+		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+		xhr.onload = function() {
+			//console.log('Signed in as: ' + xhr.responseText);
+			window.location = xhr.getResponseHeader("Location");
+			//document.open();
+		    //document.write(xhr.responseText);
+		    //document.close();
+		};
+		xhr.send('idtoken=' + id_token);
+	}
+
+	function onLoad() {
+		gapi.load('auth2', function() {
+			gapi.auth2.init();
+		});
+	}
+	
+	function signOut() {
+		var auth2 = gapi.auth2.getAuthInstance();
+		auth2.signOut().then(
+			function() {
+				//console.log('User signed out.');
+				var xhr = new XMLHttpRequest();
+				xhr.open('GET', '/member/logout');
+				xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+				xhr.onload = function() {
+					console.log('User signed out.');
+					window.location.replace("/");
+				};
+				xhr.send();
+			});
+	}
+	</script>
+	<script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+
+	<!-- check upload file size -->
+	<script defer src="/js/check_upload_filesize.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	
+	<!-- board file select by drag and drop -->
+	<script defer src="/js/file_select_by_drag_and_drop.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	
+	
+	<!-- Syntax highlighter styles -->
+	<link rel="stylesheet" href="/css/syntax/shCore.css;jsessionid=A654758F0F18128551A96730EE9CEED6">
+	<link rel="stylesheet" href="/css/syntax/shThemeEclipse.css;jsessionid=A654758F0F18128551A96730EE9CEED6">
+	<script type="text/javascript" async src="/js/syntax/shCore.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script type="text/javascript" async src="/js/syntax/shBrushJScript.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script type="text/javascript" async src="/js/syntax/shLegacy.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script type="text/javascript" async src="/js/syntax/shBrushBash.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script type="text/javascript" async src="/js/syntax/shBrushCpp.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script type="text/javascript" async src="/js/syntax/shBrushCSharp.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script type="text/javascript" async src="/js/syntax/shBrushCss.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script type="text/javascript" async src="/js/syntax/shBrushDelphi.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script type="text/javascript" async src="/js/syntax/shBrushDiff.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script type="text/javascript" async src="/js/syntax/shBrushGroovy.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script type="text/javascript" async src="/js/syntax/shBrushJava.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script type="text/javascript" async src="/js/syntax/shBrushJSP.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script type="text/javascript" async src="/js/syntax/shBrushPhp.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script type="text/javascript" async src="/js/syntax/shBrushPlain.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script type="text/javascript" async src="/js/syntax/shBrushPython.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script type="text/javascript" async src="/js/syntax/shBrushRuby.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script type="text/javascript" async src="/js/syntax/shBrushScala.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script type="text/javascript" async src="/js/syntax/shBrushSql.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script type="text/javascript" async src="/js/syntax/shBrushVb.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script type="text/javascript" async src="/js/syntax/shBrushXml.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+	<script type="text/javascript" async src="/js/syntax/myConfig.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+</head>
+<script defer src="/highcharts/highcharts.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+<script defer src="/highcharts/themes/sand-signika.js;jsessionid=A654758F0F18128551A96730EE9CEED6"></script>
+<body>
+<!-- HEADER -->
+<div class="container">
+<div id="divHeaderWrapper">
+	<header class="header-standard-2">     
+    <!-- MAIN NAV -->
+    <div class="navbar navbar-wp navbar-arrow mega-nav" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <i class="fa fa-bars icon-custom"></i>
+            </button>
+            <a class="navbar-brand" href="https://javaspecialist.co.kr" title=""><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+            	자바전문가그룹</a><div style="padding-left:15px; width:200px">https://www.javaspecialist.co.kr</div>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden-md hidden-lg">
+                    <div class="bg-light-gray">
+                        <form class="form-horizontal form-light p-15" role="form">
+                            <div class="input-group input-group-lg">
+                                <input type="text" class="form-control" placeholder="I want to find ...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-white" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>자바 개발</strong></a>
+                    <ul class="dropdown-menu">
+                    	<li><a href="/board/cat/2;jsessionid=A654758F0F18128551A96730EE9CEED6">자바</a>
+			        	<li><a href="/board/cat/3;jsessionid=A654758F0F18128551A96730EE9CEED6">Servlet & JSP</a>
+			        	<li><a href="/board/cat/9;jsessionid=A654758F0F18128551A96730EE9CEED6">Android</a>
+			        	<li><a href="/board/cat/4;jsessionid=A654758F0F18128551A96730EE9CEED6">Spring Framework & Boot</a>
+			        	<li><a href="/board/cat/10;jsessionid=A654758F0F18128551A96730EE9CEED6">데이터베이스</a>
+			        	<li><a href="/board/cat/12;jsessionid=A654758F0F18128551A96730EE9CEED6">HTML5</a>
+			        	<li><a href="/board/cat/13;jsessionid=A654758F0F18128551A96730EE9CEED6">CSS3</a>
+			        	<li><a href="/board/cat/14;jsessionid=A654758F0F18128551A96730EE9CEED6">JavaScript</a>
+			        	</ul>
+				</li>
+				<li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>빅데이터 & 인공지능 </strong></a>
+                    <ul class="dropdown-menu">
+                    	<li><a href="/board/cat/5;jsessionid=A654758F0F18128551A96730EE9CEED6">빅데이터</a>
+			        	<li><a href="/board/cat/6;jsessionid=A654758F0F18128551A96730EE9CEED6">하둡 & 하둡에코시스템</a>
+			        	<li><a href="/board/cat/31;jsessionid=A654758F0F18128551A96730EE9CEED6">AI, 인공신경망, 딥러닝</a>
+			        	<li><a href="/board/cat/15;jsessionid=A654758F0F18128551A96730EE9CEED6">리눅스 기본</a>
+			        	<li><a href="/board/cat/20;jsessionid=A654758F0F18128551A96730EE9CEED6">The Python - 파이썬 프로그래밍</a>
+			        	<li><a href="/board/cat/33;jsessionid=A654758F0F18128551A96730EE9CEED6">OpenCV 영상처리</a>
+			        	<li><a href="/board/cat/7;jsessionid=A654758F0F18128551A96730EE9CEED6">R 기본</a>
+			        	<li><a href="/board/cat/35;jsessionid=A654758F0F18128551A96730EE9CEED6">자연어처리</a>
+			        	<li><a href="/board/cat/8;jsessionid=A654758F0F18128551A96730EE9CEED6">머신러닝 데이터 분석</a>
+			        	</ul>
+				</li>
+                <li class="dropdown">
+                    <a href='/member/login;jsessionid=A654758F0F18128551A96730EE9CEED6' class="dropdown-toggle" data-toggle="dropdown"><strong>회원메뉴</strong></a>
+                    <ul class="dropdown-menu">
+                    	<li><a href="/member/login;jsessionid=A654758F0F18128551A96730EE9CEED6">내 정보</a>
+                        <li><a href="/member/update;jsessionid=A654758F0F18128551A96730EE9CEED6">회원 정보 수정</a>
+                        <li><a href="/member/delete;jsessionid=A654758F0F18128551A96730EE9CEED6">회원 탈퇴</a>
+                        <li><a href="/member/logout;jsessionid=A654758F0F18128551A96730EE9CEED6">로그아웃</a>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/member/insert;jsessionid=A654758F0F18128551A96730EE9CEED6">회원가입</a>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/html5.jsp;jsessionid=A654758F0F18128551A96730EE9CEED6" class="dropdown-toggle" data-toggle="dropdown"><strong>샘플</strong></a>
+                    <ul class="drodata-toggle="dropdown"><strong>회원메뉴</strong></a>
+                    <ul class="dropdown-menu">
+                    	<li><a href="/member/login;jsessionid=A654758F0F18128551A96730EE9CEED6">내 정보</a>
+                        <li><a href="/member/update;jsessionid=A654758F0F18128551A96730EE9CEED6">회원 정보 수정</a>
+                        <li><a href="/member/delete;jsessionid=A654758F0F18128551A96730EE9CEED6">회원 탈퇴</a>
+                        <li><a href="/member/logout;jsessionid=A654758F0F18128551A96730EE9CEED6">로그아웃</a>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/member/insert;jsessionid=A654758F0F18128551A96730EE9CEED6">회원가입</a>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="/html5.jsp;jsessionid=A654758F0F18128551A96730EE9CEED6" class="dropdown-toggle" data-toggle="dropdown"><strong>샘플</strong></a>
+                    pdown-menu">
+                        <li><a href='/html5;jsessionid=A654758F0F18128551A96730EE9CEED6'>HTML5</a></li>
+ 						<li><a href='/css3;jsessionid=A654758F0F18128551A96730EE9CEED6'>CSS3</a></li>
+ 						<li><a href='/js;jsessionid=A654758F0F18128551A96730EE9CEED6'>자바스크립트</a></li>
+ 						<li><a href='/skills;jsessionid=A654758F0F18128551A96730EE9CEED6'>홈페이지 기술</a></li>
+ 						<li><a href='/accesslog;jsessionid=A654758F0F18128551A96730EE9CEED6'>Dynamic chart sample by websocket</a></li>
+ 						
+ 						</ul>
+                </li>
+                <!-- li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">찾기</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/view;jsessionid=A654758F0F18128551A96730EE9CEED6?manage/searchProductForm">이름으로 찾기</a></li>
+                        <li><a href="/view;jsessionid=A654758F0F18128551A96730EE9CEED6?manage/searchProductByLocationForm">위치로 찾기</a></li>
+                        <li><a href="/view;jsessionid=A654758F0F18128551A96730EE9CEED6?manage/searchProductByDeptForm">부서이름으로 찾기</a></li>
+                    </ul>
+                </li-->
+                <!-- li class="dropdown">
+                    <a href='#' class="dropdown-toggle" data-toggle="dropdown"><strong>테스트 메뉴</strong></a>
+                    <ul class="dropdown-menu">
+                        <li><a href='/emp/list;jsessionid=A654758F0F18128551A96730EE9CEED6'>EMP 목록</a></li>
+                        <li><a href='/emp/list;jsessionid=A654758F0F18128551A96730EE9CEED6?list=json'>Emp JSON 데이터</a></li>
+ 						<li><a href='/emp;jsessionid=A654758F0F18128551A96730EE9CEED6?insert'>사원정보 추가</a></li>
+    					<li role="separator" class="divider"></li>
+                    	<li><a href="/view;jsessionid=A654758F0F18128551A96730EE9CEED6?member/loginok">소유 자산 목록</a>
+                        <li><a href="/view;jsessionid=A654758F0F18128551A96730EE9CEED6?manage/searchProductForm">이름으로 찾기</a></li>
+                        <li><a href="/view;jsessionid=A654758F0F18128551A96730EE9CEED6?manage/searchProductByLocationForm">위치로 찾기</a></li>
+                        <li><a href="/view;jsessionid=A654758F0F18128551A96730EE9CEED6?manage/searchProductByDeptForm">부서이름으로 찾기</a></li>
+                    </ul>
+                </li-->
+                <li class="dropdown dropdown-aux animate-click" data-animate-in="animated" data-animate-out="animated fadeOutDown" style="z-index:500;">
+                    <a href="#" class="dropdown-form-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-user">
+                        <li id="dropdownForm">
+                            <div class="dropdown-form">
+                                <form class="form-horizontal form-light p-15" action="/board/search;jsessionid=A654758F0F18128551A96730EE9CEED6" method="post" role="form">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="keyword" placeholder="키워드를 입력하세요.">
+                                        <span class="input-group-btn">
+                                            <input type="submit" class="btn btn-base" value="Go">
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+               <li><div>
+               <br><a href="/member/login;jsessionid=A654758F0F18128551A96730EE9CEED6" class="btn btn-danger">로그인</a>
+               </div>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+	</header>
+</div>
+</div>
+<div class="area"></div>
+<nav class="side-menu">
+	<ul>
+		<li><a href="/board/cat/11"> <i class="fa fa-map-marker fa-2x"></i> <span class="nav-text"> 마인드맵</span></a></li>
+		<!--li><a href="/board/cat/50"> <i class="fa fa-folder-open fa-2x"></i> <span class="nav-text"> 교육중</span></a></li-->
+		<li><a href="/board/cat/1"> <i class="fa fa-info fa-2x"></i> <span class="nav-text"> 공지사항</span></a></li>
+		<li><a href="/hr"> <i class="fa fa-spinner fa-spin fa-2x fa-fw"></i> <span class="nav-text"> Employees JSON 데이터</span></a></li>
+		<li><a href="/emp"> <i class="fa fa-circle-o-notch fa-spin fa-2x fa-fw"></i> <span class="nav-text"> Emp JSON 데이터</span></a></li>
+		</ul>
+	<!-- ul class="logout">
+		<li><a href="#"> <i class="fa fa-power-off fa-2x"></i> <span
+				class="nav-text"> Logout </span>
+		</a></li>
+	</ul-->
+</nav>
+<div class="container">
+	<div class="pg-opt">
+        <div class="row">
+            <div class="col-md-6 pc">
+                <h2>홈</h2>
+            </div>
+            <div class="col-md-6">
+                <ol class="breadcrumb">
+                    <li>대시보드</li>
+                    <li class="active">홈</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+	<div class="content">
+	<div class="alert alert-warning" class="page-header">
+		<h3>개발인재 양성을 위한 선택! 자바전문가그룹입니다.</h3>
+	</div>
+	<div class="progress">
+		<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+		<span class="sr-only"></span>
+		</div>
+	</div>
+	<div class="alert alert-info">
+		<h4>자바전문가그룹의 프로젝트 경험</h4>
+		<ul>
+			<li>- 산업통상자원부(한국산업기술진흥원) 국가혁신클러스터 성과완성형(R&amp;D) 사업 - 정밀농업 기술을 적용한 약용작물 데이터 서비스 플랫폼 상용화, 2020~2022
+			<li>- xEMS 연계 스마트빌딩 M&amp;V 시스템 개발의 회귀분석 java 패키지 개발, (사)한국건물에너지기술원, 2021
+			<li>- 머신러닝을 이용한 타지키스탄 세관 위법물 예측, 데이터월드, 2021
+			<li>- NIA AI학습용 데이터 구축 어노테이션 자동화, 2020
+			<li>- 세브란스 어린이병원 AI 딥러닝을 이용한 골연령 인식, 2020
+			<li>- 스마트팜 및 고부가가치 전략식품 상용화 빅데이터 분산 플랫폼 클러스터 구축, 산업통상자원부, 리퓨터, 2019
+		</ul>
+	</div>
+	<div class="progress">
+		<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+		<span class="sr-only"></span>
+		</div>
+	</div>
+	<div class="alert alert-warning">
+		<h4>자바전문가그룹이 빅데이터, 인공지능 분야로의 발전을 지원합니다. 자바전문가그룹에서 출간한 책을 만나보세요.</h4>
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<a href="https://bookk.co.kr/bookStore/678cc108ad5b268aef0dd2d4" class="thumbnail">
+					<img src="https://file.bookk.co.kr/thumbnails/products/678cc108ad5b268aef0dd2d4/thumbnail?w=300">
+				</a>
+			</div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                <a href="https://bookk.co.kr/bookStore/66a886b996dca174311efe2b" class="thumbnail">
+                                        <img src="https://file.bookk.co.kr/thumbnails/products/66a886b996dca174311efe2b/thumbnail?w=300">
+                                </a>
+                        </div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<a href="https://bookk.co.kr/bookStore/646acf4f4222b24502d3de90" class="thumbnail">
+					<img src="images/oracle-sql.png" alt="처음 시작하는 SQL 데이터베이스">
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<a href="https://bookk.co.kr/bookStore/646aebed4222b24502d46088" class="thumbnail">
+					<img src="images/python.png" alt="The Python - 파이썬 프로그래밍">
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<a href="https://bookk.co.kr/bookStore/646ad83b4222b24502d4077c" class="thumbnail">
+					<img src="images/python-lib.png" alt="파이썬 데이터 전처리 및 탐색 라이브러리">
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<a href="https://bookk.co.kr/bookStore/646add464222b24502d41e6f" class="thumbnail">
+					<img src="images/ml.png" alt="머신러닝을 이용한 데이터 분석">
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<a href="https://bookk.co.kr/bookStore/646af1334222b24502d478a6" class="thumbnail">
+					<img src="images/ai-dl.png" alt="인공신경망 딥러닝 알고리즘 구현과 실시간 객체 탐지">
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<a href="https://bookk.co.kr/bookStore/646adce44222b24502d41c72" class="thumbnail">
+					<img src="images/opencv.png" alt="파이썬 OpenCV를 이용한 영상처리">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="progress">
+		<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+		<span class="sr-only"></span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+		<div class="thumbnail">
+			<div class="caption">
+			<h3>Java</h3>
+			<ul>
+				<li>Java Programming
+				<li>Java Window Programming 
+				<li>JDBC Programming
+				<li>Servlet/JSP Web Programming
+				<li>Spring Framework
+				<li>MyBatis Framework
+			</ul>
+			</div>
+		</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+		<div class="thumbnail">
+			<div class="caption">
+			<h3>Framework</h3>
+			<ul>
+				<li>Spring Framework
+				<li>전자정부표준프레임워크 
+				<li>MyBatis Framework
+				<li>Bootstrap
+				<li>D3.js, Visualization
+				<li>Dandelion Datatables 
+			</ul>
+			</div>
+		</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+		<div class="thumbnail">
+			<div class="caption">
+			<h3>BigData</h3>
+			<ul>
+				<li>Hadoop, NoSQL
+				<li>R Analytics/Visualization 
+				<li>Machine Learning
+				<li>BigData Analytics
+				<li>Host Virtualization
+				<li>Cloud Computing
+			</ul>
+			</div>
+		</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+		<div class="thumbnail">
+			<div class="caption">
+			<h3>Mobile, Web</h3>
+			<ul>
+				<li>Android
+				<li>Hybrid Mobile App 
+				<li>HTML5, Web Standard
+				<li>CSS3, Bootstrap
+				<li>JavaScript, JQuery
+				<li>Responsive Web
+			</ul>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="progress">
+		<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+		<span class="sr-only"></span>
+		</div>
+	</div>
+	<div class="alert alert-info">
+		<ol>
+			<li><a href="http://coderby.com" class="alert-link pc" target="_blank">AI, 데이터 분석 온라인 교육 플랫폼</a>
+			<li><a href="http://cafe.naver.com/javaspecialistgroup.cafe" class="alert-link pc" target="_blank">네이버 자바전문가그룹 카페로 이동하시려면 여기를 클릭하세요.</a>
+		</ol>
+	</div>
+	</div>
+</div>
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="col">
+                   <h4>Contact us</h4>
+                   <ul>
+                        <li>Phone: 010 3402 7902</li>
+                        <li>Email: <a href="mailto:hjk7902@gmail.com" title="Email Us">hjk7902@gmail.com</a></li>
+                        <li><a href="http://www.javaspecialist.co.kr">http://www.javaspecialist.co.kr</a></li>
+                   </ul>
+                 </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="col">
+                    <h4>Mailing list</h4>
+                    <p>Sign up if you would like to receive</p>
+                    <form action='/subscribe;jsessionid=A654758F0F18128551A96730EE9CEED6' method="post" class="form-horizontal form-light">
+                        <div class="input-group">
+                            <input type="email" name="email" class="form-control" placeholder="Your email address..." required>
+                            <span class="input-group-btn">
+                                <input type="submit" class="btn btn-base" value="GO!">
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="col col-social-icons">
+                    <h4>Follow us</h4>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                
+                </div>
+			</div>
+
+			<div class="col-md-3">
+                <div class="col">
+                    <h4>About us</h4>
+                    <p class="no-margin">
+                    Java developer specialist group community. It something special for your.
+                    <a href="/;jsessionid=A654758F0F18128551A96730EE9CEED6" class="btn btn-block btn-base btn-icon fa-check"><span>Try it now</span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+	</div>
+</footer>
+</body>
+</html>
+          </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="col col-social-icons">
+                    <h4>Follow us</h4>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                
+                </div>
+			</div>
+
+			<div class="col-md-3">
+                <div class="col">
+                    <h4>About us</h4>
+                    <p class="no-margin">
