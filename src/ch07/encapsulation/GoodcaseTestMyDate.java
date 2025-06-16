@@ -12,7 +12,7 @@ public class GoodcaseTestMyDate {
 		mydate.setYear(1998);
 		mydate.setMonth(7);
 		mydate.setDay(15);
-		
+
 		System.out.println("My Birthday :" + mydate.toString());
 	}
 }
